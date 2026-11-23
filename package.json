@@ -72,5 +72,10 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.4.5"
+  },
+  "allowScripts": {
+    "@swc/core@1.7.10": true,
+    "bcrypt@5.1.1": true,
+    "sharp@0.33.5": true
   }
 }
