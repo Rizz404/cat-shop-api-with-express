@@ -17,6 +17,7 @@ const options: StrategyOptions = {
 };
 
 const googleOauth2Strategy = (passport: PassportStatic) => {
+  if (!process.env.GOOGLE_CLIENT_ID || !process.env.GOOGLE_CLIENT_SECRET) return;
   passport.use(
     new GoogleOauth2Strategy(
       options,
